@@ -2,7 +2,7 @@
 
 A robust, all-in-one automation script designed for non-root users to compile and configure **WRF 4.6.0**, **WPS 4.6.0**, and all required local libraries entirely from source inside `$HOME/Build_WRF`. 
 
-This script eliminates common path conflicts, duplicate compilation steps, and silent compilation failures often encountered when mixing local dependencies with system-level paths.
+This script eliminates common path conflicts, duplicate compilation steps, and silent compilation failures often encountered when mixing local dependencies with system-level paths; the method is adopted from uems_install.pl I would like to recognise Dr.Robert Rozumalski and the AI technology. 
 
 ## Features
 
