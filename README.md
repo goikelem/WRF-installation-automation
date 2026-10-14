@@ -83,14 +83,16 @@ source ~/.bashrc
 ## Post-Installation
 Once the script finishes execution, check your instructions guide located at:
 
-Bash
-cat ~/WRF-DoList.txt
-To load your environment modules (if using Environment Modules):
 
-Bash
-export MODULEPATH="${MODULEPATH}:$HOME/Build_WRF/etc/modulefiles"
+``` bash cat ~/WRF-DoList.txt
+```
+### To load your environment modules (if using Environment Modules):
+
+```bash export MODULEPATH="${MODULEPATH}:$HOME/Build_WRF/etc/modulefiles"
 module load WRFARW  # (or WRFChem / WRFHydro)
 Alternatively, source the environment file directly:
+```
 
-Bash
+```bash
 source $HOME/Build_WRF/etc/modulefiles/WRFARW.sh
+```
