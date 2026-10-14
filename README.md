@@ -79,19 +79,20 @@ source ~/.bashrc
   cd ~/Build_WRF/WPS-4.6.0
   ls -l *.exe
   ```
-```
-Post-Installation
+
+## Post-Installation
 Once the script finishes execution, check your instructions guide located at:
 
 Bash
-cat ~/WRF-DoList.txt
+``` cat ~/WRF-DoList.txt
+```
 To load your environment modules (if using Environment Modules):
 
 Bash
-export MODULEPATH="${MODULEPATH}:$HOME/Build_WRF/etc/modulefiles"
-module load WRFARW  # (or WRFChem / WRFHydro)
-Alternatively, source the environment file directly:
+```export MODULEPATH="${MODULEPATH}:$HOME/Build_WRF/etc/modulefiles"
+### module load WRFARW  # (or WRFChem / WRFHydro)
+Alternatively, source the environment file directly:```
 
 Bash
-source $HOME/Build_WRF/etc/modulefiles/WRFARW.sh
+```source $HOME/Build_WRF/etc/modulefiles/WRFARW.sh
 ```
