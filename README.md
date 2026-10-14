@@ -1,8 +1,14 @@
+Here is the cleaned, properly formatted, and corrected version of your `README.md`.
+
+I have removed hidden non-breaking space characters that often cause rendering glitches on GitHub, fixed the duplicated "Post-Installation" section, corrected the script name consistency (`install_wrf_4.6.0.sh`), and properly closed the code blocks.
+
+---
+
 # WRF 4.6.0 Unified Local Installation Script
 
-A robust, all-in-one automation script designed for non-root users to compile and configure **WRF 4.6.0**, **WPS 4.6.0**, and all required local libraries entirely from source inside `$HOME/Build_WRF`. 
+A robust, all-in-one automation script designed for non-root users to compile and configure **WRF 4.6.0**, **WPS 4.6.0**, and all required local libraries entirely from source inside `$HOME/Build_WRF`.
 
-This script eliminates common path conflicts, duplicate compilation steps, and silent compilation failures often encountered when mixing local dependencies with system-level paths; the method is adopted from uems_install.pl I would like to recognise Dr.Robert Rozumalski and the AI technology. 
+This script eliminates common path conflicts, duplicate compilation steps, and silent compilation failures often encountered when mixing local dependencies with system-level paths. This method is adapted from `uems_install.pl` (special thanks to Dr. Robert Rozumalski and AI technology).
 
 ## Features
 
@@ -15,48 +21,61 @@ This script eliminates common path conflicts, duplicate compilation steps, and s
 
 Once the script completes successfully, your workspace will be organized as follows:
 
-```
+```text
 $HOME/
 └── Build_WRF/
-    ├── LIBRARIES/           # Source code tarballs and build directories for dependencies
-    ├── local/               # Prefix folder containing compiled bins, libs, and includes
-    ├── WRF-4.6.0-ARW/       # Compiled WRF source directory (or -Chem / -Hydro)
-    ├── WPS-4.6.0/           # Compiled WPS source directory
-    └── WPS_GEOG/            # High-resolution mandatory geography datasets (and chemistry data if enabled)
+    ├── LIBRARIES/             # Source code tarballs and build directories for dependencies
+    ├── local/                 # Prefix folder containing compiled bins, libs, and includes
+    ├── WRF-4.6.0-ARW/         # Compiled WRF source directory (or -Chem / -Hydro)
+    ├── WPS-4.6.0/             # WPS source directory
+    └── WPS_GEOG/              # High-resolution mandatory geography datasets (and chemistry data if enabled)
+
 ```
 
 ## Prerequisites
 
 Ensure your system has basic build utilities and compilers available:
+
 * GNU Compiler Collection (`gcc`, `g++`, `gfortran`)
 * Build essentials (`make`, `m4`, `perl`)
 * Download tools (`wget` or `curl`)
 
-> **Note:** Disk space of at least **25–30 GB** is recommended, as compiling WRF/WPS and downloading geography data requires substantial storage.
+> **Note:** A disk space of at least **25–30 GB** is recommended, as compiling WRF/WPS and downloading geography data requires substantial storage.
 
 ## Usage Instructions
 
 1. Save the installation script as `install_wrf_4.6.0.sh` in your preferred directory.
 2. Make the script executable:
-   ```bash
-   chmod +x install_wrf_4.6.0.sh
-   ```
+```bash
+chmod +x install_wrf_4.6.0.sh
+
+```
+
+
 3. Run the script choosing your desired configuration mode:
+* **For Standard WRF-ARW:**
+```bash
+bash install_wrf_4.6.0.sh -arw
 
-   * **For Standard WRF-ARW:**
-     ```bash
-     bash install_wrf_4.6.0.sh -arw
-     ```
+```
 
-   * **For WRF-Chem (includes KPP & chemical emissions geography):**
-     ```bash
-     bash install_wrf_4.6.0.sh -chem
-     ```
 
-   * **For WRF-Hydro:**
-     ```bash
-     bash install_wrf.sh -hydro
-     ```
+* **For WRF-Chem (includes KPP & chemical emissions geography):**
+```bash
+bash install_wrf_4.6.0.sh -chem
+
+```
+
+
+* **For WRF-Hydro:**
+```bash
+bash install_wrf_4.6.0.sh -hydro
+
+```
+
+
+
+
 
 ## Post-Installation
 
@@ -64,35 +83,50 @@ After the script finishes execution, reload your shell profile to update your en
 
 ```bash
 source ~/.bashrc
+
 ```
 
 ### Verifying the Installation
 
 * **Check WRF Executables:** Navigate to your WRF main directory and look for real-time model executables (`wrf.exe`, `real.exe`):
-  ```bash
-  cd ~/Build_WRF/WRF-4.6.0-ARW/main
-  ls -l *.exe
-  ```
+```bash
+cd ~/Build_WRF/WRF-4.6.0-ARW/main
+ls -l *.exe
+
+```
+
 
 * **Check WPS Executables:** Navigate to your WPS directory and look for WPS executables (`ungrib.exe`, `metgrid.exe`, `geogrid.exe`):
-  ```bash
-  cd ~/Build_WRF/WPS-4.6.0
-  ls -l *.exe
-  ```
+```bash
+cd ~/Build_WRF/WPS-4.6.0
+ls -l *.exe
 
-## Post-Installation
-Once the script finishes execution, check your instructions guide located at:
-
-
-``` bash cat ~/WRF-DoList.txt
 ```
-### To load your environment modules (if using Environment Modules):
 
-```bash export MODULEPATH="${MODULEPATH}:$HOME/Build_WRF/etc/modulefiles"
+
+
+### Checking Your Instructions Guide
+
+Review your instruction guide generated during the build process:
+
+```bash
+cat ~/WRF-DoList.txt
+
+```
+
+### Loading Environment Modules (Alternative Method)
+
+If you prefer using Environment Modules rather than global exports, load them via:
+
+```bash
+export MODULEPATH="${MODULEPATH}:$HOME/Build_WRF/etc/modulefiles"
 module load WRFARW  # (or WRFChem / WRFHydro)
-Alternatively, source the environment file directly:
+
 ```
+
+Alternatively, source the environment file directly:
 
 ```bash
 source $HOME/Build_WRF/etc/modulefiles/WRFARW.sh
+
 ```
