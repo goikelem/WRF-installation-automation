@@ -1,0 +1,27 @@
+# WRF & WPS 4.6.0 UEMS-Style Local Installer
+
+A robust, non-root automated installation script for **WRF 4.6.0** and **WPS 4.6.0** (supporting ARW, Chem, and Hydro configurations). Inspired by the UEMS framework, this script handles local library compilation, package caching, environment module generation, and step-by-step user guidance.
+
+## Features
+
+- **Non-Root Installation**: Installs all libraries and binaries locally into a user-specified directory (default: `$HOME/Build_WRF`).
+- **Multiple Configurations**: Build ARW, Chemistry, Hydro, or all variants.
+- **Package Caching**: Downloads and caches tarballs in a local `packages/` directory.
+- **Environment Management**: Generates Tcl modulefiles and sourceable Bash/Tcsh scripts instead of cluttering your `.bashrc`.
+- **Post-Install Guidance**: Generates a `WRF-DoList.txt` instruction sheet in your home directory[cite: 1].
+
+---
+
+## Prerequisites
+
+Ensure your system has basic build essentials installed (gcc, gfortran, make, wget/curl, git, perl):
+- **Ubuntu/Debian**: `sudo apt-get install build-essential gfortran m4 curl wget git`
+- **CentOS/RHEL**: `sudo yum groupinstall "Development Tools"` and `sudo yum install gcc-gfortran`
+
+---
+
+## Usage
+
+Save the script as `install_wrf.sh` and make it executable:
+```bash
+chmod +x install_wrf.sh
