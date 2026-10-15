@@ -30,6 +30,11 @@ If you are running a Debian-based or Ubuntu-based distribution, use the dedicate
 
 ```bash
 # 1. Grant execution permissions to the script
+
+git clone https://github.com/goikelem/WRF-installation-automation.git
+
+cd WRF-installation-automation
+
 chmod +x install_wrf_system_dependencies_debian_ubuntu_packages.sh
 
 # 2. Run the script with sudo privileges
@@ -44,6 +49,10 @@ If you are running a Red Hat-based distribution, use the Red Hat family package 
 
 ```bash
 # 1. Grant execution permissions to the script
+
+git clone https://github.com/goikelem/WRF-installation-automation.git
+
+cd WRF-installation-automation
 chmod +x install_wrf_system_dependencies_redhatfamily_packages.sh
 
 # 2. Log in as the root user or switch to root
