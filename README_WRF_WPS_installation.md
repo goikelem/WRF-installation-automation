@@ -1,4 +1,5 @@
-```markdown
+
+
 # 🌪️ WRF 4.6.0 Unified Local Installation Script
 
 `💻 Platform: Linux / Unix`
@@ -18,7 +19,8 @@ This script eliminates common path conflicts, duplicate compilation steps, and s
 - **Automated Dependency Chain:** Compiles `zlib`, `HDF5`, `NetCDF-C`, `NetCDF-Fortran`, `MPICH`, `libpng`, `JasPer`, `Flex`, and `Byacc` in the correct sequential order.
 - **Smart Environment Configuration:** Automatically appends and exports necessary environment variables to your `~/.bashrc`.
 
----
+
+```markdown 
 
 ## 📂 Directory Structure After Installation
 
@@ -86,6 +88,9 @@ bash install_wrf_4.6.0.sh -chem
 bash install_wrf_4.6.0.sh -hydro
 
 ```
+
+
+
 
 
 ---
