@@ -1,14 +1,13 @@
-Here is a professional, visually polished, and beautifully formatted version of your `README.md`. It incorporates GitHub-compatible markdown badges, clean layout structures, and intuitive emoji accents to make the documentation stand out.
 
 ```markdown
 <div align="center">
 
 # 🌪️ WRF 4.6.0 Unified Local Installation Script
 
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%2F%20Unix-blue?style=flat-square&logo=linux)](https://www.linux.org/)
-[![Version](https://img.shields.io/badge/WRF-v4.6.0-green?style=flat-square)](https://www.mmm.ucar.edu/weather-research-and-forecasting-model)
-[![License](https://img.shields.io/badge/License-Open%20Source-orange?style=flat-square)]()
-[![Privileges](https://img.shields.io/badge/Privileges-Non--Root%20%2F%20User%20Space-purple?style=flat-square)]()
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%2F%20Unix-blue?style=flat-square&logo=linux&logoColor=white)](https://www.linux.org/)
+[![Version](https://img.shields.io/badge/WRF-v4.6.0-green?style=flat-square&logo=nuxtdotjs&logoColor=white)](https://www.mmm.ucar.edu/weather-research-and-forecasting-model)
+[![License](https://img.shields.io/badge/License-Open%20Source-orange?style=flat-square&logo=opensourceinitiative&logoColor=white)](https://opensource.org/)
+[![Privileges](https://img.shields.io/badge/Privileges-Non--Root%20%2F%20User%20Space-purple?style=flat-square&logo=gnome&logoColor=white)](https://www.gnu.org/)
 
 A robust, all-in-one automation script designed for non-root users to compile and configure **WRF 4.6.0**, **WPS 4.6.0**, and all required local libraries entirely from source inside `$HOME/Build_WRF`.
 
@@ -60,13 +59,17 @@ Ensure your system has basic build utilities and compilers available:
 
 ## 🚀 Usage Instructions
 
-1. Clone the installation script `install_wrf_4.6.0.sh` in your preferred directory.
-2. Change your working directory to `WRF-installation-automation` and make the script executable:
+1. Clone the installation repository and change your working directory:
 ```bash
-git clone https://github.com/goikelem/WRF-installation-automation.git
+git clone [https://github.com/goikelem/WRF-installation-automation.git](https://github.com/goikelem/WRF-installation-automation.git)
 
 cd WRF-installation-automation
 
+```
+
+
+2. Make the script executable:
+```bash
 chmod +x install_wrf_4.6.0.sh
 
 ```
