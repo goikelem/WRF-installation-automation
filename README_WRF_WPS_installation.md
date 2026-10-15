@@ -46,7 +46,12 @@ Ensure your system has basic build utilities and compilers available:
 * GNU Compiler Collection (`gcc`, `g++`, `gfortran`)
 * Build essentials (`make`, `m4`, `perl`)
 * Download tools (`wget` or `curl`)
+[Install WRF system dependencies](https://github.com/goikelem/WRF-installation-automation/blob/main/install_wrf_system_dependencies_debian_ubuntu_packages.sh
+ "For Debian and Ubuntu distribution families")
 
+[Install WRF system dependencies](https://github.com/goikelem/WRF-installation-automation/blob/main/install_wrf_system_dependencies_redhatfamily_packages.sh
+ "For RedHat distribution families")
+ 
 > **⚠️ Note:** A disk space of at least **25–30 GB** is recommended, as compiling WRF/WPS and downloading geography data requires substantial storage.
 
 ---
