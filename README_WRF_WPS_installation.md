@@ -1,13 +1,15 @@
+Here is the updated `README.md` formatted cleanly with styled, colorful text badges that use standard Markdown text formatting instead of external hyperlink badges.
 
 ```markdown
 <div align="center">
 
 # 🌪️ WRF 4.6.0 Unified Local Installation Script
 
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%2F%20Unix-blue?style=flat-square&logo=linux&logoColor=white)](https://www.linux.org/)
-[![Version](https://img.shields.io/badge/WRF-v4.6.0-green?style=flat-square&logo=nuxtdotjs&logoColor=white)](https://www.mmm.ucar.edu/weather-research-and-forecasting-model)
-[![License](https://img.shields.io/badge/License-Open%20Source-orange?style=flat-square&logo=opensourceinitiative&logoColor=white)](https://opensource.org/)
-[![Privileges](https://img.shields.io/badge/Privileges-Non--Root%20%2F%20User%20Space-purple?style=flat-square&logo=gnome&logoColor=white)](https://www.gnu.org/)
+<br>
+
+`💻 Platform: Linux / Unix` &nbsp;&nbsp;|&nbsp;&nbsp; `📦 Version: WRF v4.6.0` &nbsp;&nbsp;|&nbsp;&nbsp; `🔓 License: Open Source` &nbsp;&nbsp;|&nbsp;&nbsp; `👤 Privileges: Non-Root / User Space`
+
+<br>
 
 A robust, all-in-one automation script designed for non-root users to compile and configure **WRF 4.6.0**, **WPS 4.6.0**, and all required local libraries entirely from source inside `$HOME/Build_WRF`.
 
