@@ -1,17 +1,10 @@
 ```markdown
-<div align="center">
-
 # 🌪️ WRF 4.6.0 Unified Local Installation Script
 
-<br>
 
-`💻 Platform: Linux / Unix` &nbsp;&nbsp;|&nbsp;&nbsp; `📦 Version: WRF v4.6.0` &nbsp;&nbsp;|&nbsp;&nbsp; `🔓 License: Open Source` &nbsp;&nbsp;|&nbsp;&nbsp; `👤 Privileges: Non-Root / User Space`
-
-<br>
+`💻 Platform: Linux / Unix`
 
 A robust, all-in-one automation script designed for non-root users to compile and configure **WRF 4.6.0**, **WPS 4.6.0**, and all required local libraries entirely from source inside `$HOME/Build_WRF`.
-
-</div>
 
 ---
 
@@ -25,7 +18,6 @@ This script eliminates common path conflicts, duplicate compilation steps, and s
 * **Multi-Mode Support:** Supports standard ARW, WRF-Chem (with KPP), and WRF-Hydro configurations via simple command-line flags.
 * **Automated Dependency Chain:** Compiles `zlib`, `HDF5`, `NetCDF-C`, `NetCDF-Fortran`, `MPICH`, `libpng`, `JasPer`, `Flex`, and `Byacc` in the correct sequential order.
 * **Smart Environment Configuration:** Automatically appends and exports necessary environment variables to your `~/.bashrc`.
-
 ---
 
 ## 📂 Directory Structure After Installation
