@@ -1,7 +1,6 @@
 ```markdown
 # 🌪️ WRF 4.6.0 Unified Local Installation Script
 
-
 `💻 Platform: Linux / Unix`
 
 A robust, all-in-one automation script designed for non-root users to compile and configure **WRF 4.6.0**, **WPS 4.6.0**, and all required local libraries entirely from source inside `$HOME/Build_WRF`.
@@ -14,10 +13,11 @@ This script eliminates common path conflicts, duplicate compilation steps, and s
 
 ### ✨ Key Features
 
-* **100% Localized:** Installs all external dependencies into a custom prefix directory (`$HOME/Build_WRF/local`), requiring **no root/sudo privileges**.
-* **Multi-Mode Support:** Supports standard ARW, WRF-Chem (with KPP), and WRF-Hydro configurations via simple command-line flags.
-* **Automated Dependency Chain:** Compiles `zlib`, `HDF5`, `NetCDF-C`, `NetCDF-Fortran`, `MPICH`, `libpng`, `JasPer`, `Flex`, and `Byacc` in the correct sequential order.
-* **Smart Environment Configuration:** Automatically appends and exports necessary environment variables to your `~/.bashrc`.
+- **100% Localized:** Installs all external dependencies into a custom prefix directory (`$HOME/Build_WRF/local`), requiring **no root/sudo privileges**.
+- **Multi-Mode Support:** Supports standard ARW, WRF-Chem (with KPP), and WRF-Hydro configurations via simple command-line flags.
+- **Automated Dependency Chain:** Compiles `zlib`, `HDF5`, `NetCDF-C`, `NetCDF-Fortran`, `MPICH`, `libpng`, `JasPer`, `Flex`, and `Byacc` in the correct sequential order.
+- **Smart Environment Configuration:** Automatically appends and exports necessary environment variables to your `~/.bashrc`.
+
 ---
 
 ## 📂 Directory Structure After Installation
@@ -54,7 +54,6 @@ Ensure your system has basic build utilities and compilers available:
 1. Clone the installation repository and change your working directory:
 ```bash
 git clone [https://github.com/goikelem/WRF-installation-automation.git](https://github.com/goikelem/WRF-installation-automation.git)
-
 cd WRF-installation-automation
 
 ```
@@ -87,9 +86,6 @@ bash install_wrf_4.6.0.sh -chem
 bash install_wrf_4.6.0.sh -hydro
 
 ```
-
-
-
 
 
 ---
