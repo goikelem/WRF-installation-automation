@@ -1,5 +1,3 @@
-Here is the updated `README.md` formatted cleanly with styled, colorful text badges that use standard Markdown text formatting instead of external hyperlink badges.
-
 ```markdown
 <div align="center">
 
