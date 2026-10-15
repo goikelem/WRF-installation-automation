@@ -94,8 +94,14 @@ bash install_wrf_4.6.0.sh -hydro
 
 ```
 
+* **Build everything into a custom location e.g., user-specific HPC:** 
+* **-all	All three (-arw, -chem  and -hydro)**
 
+```bash
 
+bash install_wrf_4.6.0.sh --homedir /scratch/me/wrf -all
+
+```
 
 
 ---
